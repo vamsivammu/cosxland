@@ -42,116 +42,56 @@ export default class Home extends React.Component{
     render(){
 
         return(
-            <div>
+            <div className="bg">
                 <SignInModal open={this.state.signinmodal} curinst = {this} />
                 <SignUpModal open= {this.state.signupmodal}  curinst = {this}/>
+                <Row>
+            <Col md={{size:6}} sm={{size:6}} xs={{size:6}}>
                 <div className="logo">
                 <h2  style={{zIndex:1000,fontFamily:"'Share Tech Mono', monospace",color:"#0b1643",paddingTop:"3px"}} >GIGXAPP</h2>
                 <img src="Assets/logo1.jpg" style={{width:"120px",padding:0}}></img>
                 </div>
+            </Col>
+                <Col md={{size:6}} sm={{size:6}} xs={{size:6}} >
+                    <button className="signup" style={{float:'right'}} onClick={this.signupmodal}>SIGN UP</button>
+                    <button className="signin" style={{float:'right'}} onClick={this.signinmodal}>SIGN IN</button>
+                    
+                </Col>
 
-            <Row style={{position:"absolute",top:"75%",zIndex:100000,width:"100%"}} className="justify-content-start">
-                     <Col sm="1" md="1" lg="1" style={{padding:0}} ><img src="Assets/6-1.png" style={{width:"150px",height:"150px"}} ></img></Col> 
-                    <Col style={{paddingTop:"40px"}}>
-                    <h2 style={{fontFamily:"'Share Tech Mono', monospace",fontWeight:1000,color:"#0b1643"}}>GIGXAPP - HIRING MARKETPLACE FOR READY TALENT</h2>
-                     <h4 style={{fontFamily:"'Share Tech Mono', monospace",color:"#0b1643"}}>To hire or  get hired instantly within 1-9 days</h4>
-                     {/* <Button round><i class="fab fa-youtube"></i> Watch Video</Button> */}
-                     </Col>
-                </Row>
-            <Row style={{position:'absolute',right:"2%",zIndex:10000}}>
-            <div>
-                <Button onClick={this.signupmodal} size="lg" color="transparent"  round style={{fontFamily:"'Share Tech Mono', monospace",fontWeight:1000,fontSize:"21px",color:"#0b1643"}}>Sign Up</Button>
-           </div>
-               <div style={{paddingLeft:"10px"}}>
-                <Button onClick={this.signinmodal} size="lg" color="transparent" round style={{fontFamily:"'Share Tech Mono', monospace",fontWeight:1000,fontSize:"21px",color:"#0b1643"}}> Sign In </Button> 
-              </div> 
             </Row>
-          		<div id="mb_background" className="mb_background">
-			<img className="mb_bgimage" src="Assets/1-2.png" alt="Background"/>
-			<div className="mb_overlay"></div>
-			<div className="mb_loading"></div>
-		</div>
-		<div id="mb_pattern" className="mb_pattern"></div>
-                <div id="mb_menu" className="mb_menu">
-			<a href="#" data-speed="1000" data-easing="easeOutBack">Candidate Zone</a>
-			<a href="#" data-speed="1000" data-easing="easeInExpo">Employer Zone</a>
-			<a href="#" data-speed="1000" data-easing="easeOutBack">Expert Zone</a>
-			<a href="#" data-speed="1000" data-easing="easeInExpo">Institution Zone</a>
-		</div>
-		<div id="mb_content_wrapper" className="mb_content_wrapper">
-			<span className="mb_close"></span>
-			<div className="mb_content">
-				<h2>Candidate Zone</h2>
-				<div className="mb_content_inner">
-                <p >-> Easy web & android apps for immediate jobs</p>
-                                        
-                                         {/* <p >-> Unlimited earning potential & opportunities</p> */}
-                                        
-                                        <p >-> Flexible work & freelance options</p>
-                                        
-                                        <p>-> Optional document checks & bot support</p>
-                                        
-                                         <p>-> Instant initial offers from employers</p>
-                                         <Row style={{paddingLeft:"15px"}}>
-                                         <Button style={{backgroundColor:'#003462',textAlign:'center'}} round><i class="fab fa-youtube"></i> Watch Video</Button>
-                                         </Row>
-                </div>
-			</div>
-			<div className="mb_content">
-				<h2>Employer Zone</h2>
-				<div className="mb_content_inner">
-                
-                                        <p  >-> All-9-n-one affordable web & android app</p>         
-                                        <p>-> Hire fast with ready talent pool</p>                                        
-                                        <p>-> Flexible instant & smart web integration</p>
-                                        {/*caps GIGX - hiring market place for ready talent */}
-                                         {/* old first line = new sec line */}
-                                        <p>-> Professional background checks & bot analytics</p>                                       
-                                        
-                                        {/* <p>-> Smart contracts & expert consultation</p> */}
-                                        <Row style={{paddingLeft:"15px"}}>
-                                         <Button style={{backgroundColor:'#003462',textAlign:'center'}} round><i class="fab fa-youtube"></i> Watch Video</Button>
-                                         </Row>
-				</div>
-			</div>
-			<div className="mb_content">
-                <p className="comingsoon">coming soon...</p>
-				<h2>Expert Zone</h2>
-                                        
-				<div className="mb_content_inner">
-                <p  >-> Easy web & android apps for expert consulting</p>
-                                        
-                                         <p>-> Improve your earning potential</p>
-                                       
-                                        <p>-> Flexible work options with prepaid consultation</p>
-                                         <p >-> Smart contracts for assured payouts</p>
-                                         <Row style={{paddingLeft:"15px"}}>
-                                         <Button style={{backgroundColor:'#003462',textAlign:'center'}} round><i class="fab fa-youtube"></i> Watch Video</Button>
-                                         </Row>
-				</div>
-			</div>
-			<div className="mb_content">
-                <p className="comingsoon">coming soon...</p>
-				<h2>Institution Zone</h2>
-				<div className="mb_content_inner">
-                                        
-                                        <p >-> Instant internship & placement opportunities</p>
-                                        
-                                        
-                                        <p >-> Faster learning & earning potential</p>
-                                        
-                                        
-                                        <p >-> Smart integration with your website</p>
-                                        
-                                        
-                                        <p >-> All-in-one app with real-time analytics</p>
-                                        <Row style={{paddingLeft:"15px"}}>
-                                         <Button style={{backgroundColor:'#003462',textAlign:'center'}} round><i class="fab fa-youtube"></i> Watch Video</Button>
-                                         </Row>
-				</div>
-			</div>
-		</div>
-            </div>
+
+            <Row className="emptyrow"></Row>
+            <Row>
+                <Col md={{size:2}} className="data">
+                    
+                    <p>> EASY TO USE WEB APPS</p>
+                    
+                    <p>> 60 SECONDS FOR YOUR POSTS</p>
+                    
+                    <p>> SMART CONTRACTS FOR TRIALS</p>
+                    
+                    <p>> BOT SCREENING & ANALYTICS</p>
+                      
+                    <button><i class="fa fa-play" aria-hidden="true"></i> WATCH VIDEO</button>
+
+                </Col>
+            </Row>
+
+            <Row  className="data1">
+
+            <Col md={{size:1}} sm={{size:1}} xs={{size:1}}>
+                <img src='Assets/6-1.png'></img>
+            </Col>
+            <Col md={{size:6}} sm={{size:6}} xs={{size:6}} >
+            <Row style={{color:'white',fontWeight:700,marginTop:"15px",fontSize:'23px'}}>
+                GIGXAPP-HIRING MARKETPLACE FOR READY TALENT
+            </Row>
+            <Row style={{color:'#003462',fontSize:'20px'}}>
+                To hire or get hired instantly within 1-9 days
+            </Row>
+            </Col>
+            </Row>
+    </div>
         )
 
 

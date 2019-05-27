@@ -1,0 +1,85 @@
+    <div id="mb_background" className="mb_background">
+			<img className="mb_bgimage" src="Assets/1-2.png" alt="Background"/>
+			<div className="mb_overlay"></div>
+			<div className="mb_loading"></div>
+		</div>
+		<div id="mb_pattern" className="mb_pattern"></div>
+                <div id="mb_menu" className="mb_menu">
+			<a href="#" data-speed="1000" data-easing="easeOutBack">Candidate Zone</a>
+			<a href="#" data-speed="1000" data-easing="easeInExpo">Employer Zone</a>
+			<a href="#" data-speed="1000" data-easing="easeOutBack">Expert Zone</a>
+			<a href="#" data-speed="1000" data-easing="easeInExpo">Institution Zone</a>
+		</div>
+		<div id="mb_content_wrapper" className="mb_content_wrapper">
+			<span className="mb_close"></span>
+			<div className="mb_content">
+				<h2>Candidate Zone</h2>
+				<div className="mb_content_inner">
+                <p >-> Easy web & android apps for immediate jobs</p>
+                                        
+                                         {/* <p >-> Unlimited earning potential & opportunities</p> */}
+                                        
+                                        <p >-> Flexible work & freelance options</p>
+                                        
+                                        <p>-> Optional document checks & bot support</p>
+                                        
+                                         <p>-> Instant initial offers from employers</p>
+                                         <Row style={{paddingLeft:"15px"}}>
+                                         <Button style={{backgroundColor:'#003462',textAlign:'center'}} round><i class="fab fa-youtube"></i> Watch Video</Button>
+                                         </Row>
+                </div>
+			</div>
+			<div className="mb_content">
+				<h2>Employer Zone</h2>
+				<div className="mb_content_inner">
+                
+                                        <p  >-> All-9-n-one affordable web & android app</p>         
+                                        <p>-> Hire fast with ready talent pool</p>                                        
+                                        <p>-> Flexible instant & smart web integration</p>
+                                        {/*caps GIGX - hiring market place for ready talent */}
+                                         {/* old first line = new sec line */}
+                                        <p>-> Professional background checks & bot analytics</p>                                       
+                                        
+                                        {/* <p>-> Smart contracts & expert consultation</p> */}
+                                        <Row style={{paddingLeft:"15px"}}>
+                                         <Button style={{backgroundColor:'#003462',textAlign:'center'}} round><i class="fab fa-youtube"></i> Watch Video</Button>
+                                         </Row>
+				</div>
+			</div>
+			<div className="mb_content">
+                <p className="comingsoon">coming soon...</p>
+				<h2>Expert Zone</h2>
+                                        
+				<div className="mb_content_inner">
+                <p  >-> Easy web & android apps for expert consulting</p>
+                                        
+                                         <p>-> Improve your earning potential</p>
+                                       
+                                        <p>-> Flexible work options with prepaid consultation</p>
+                                         <p >-> Smart contracts for assured payouts</p>
+                                         <Row style={{paddingLeft:"15px"}}>
+                                         <Button style={{backgroundColor:'#003462',textAlign:'center'}} round><i class="fab fa-youtube"></i> Watch Video</Button>
+                                         </Row>
+				</div>
+			</div>
+			<div className="mb_content">
+                <p className="comingsoon">coming soon...</p>
+				<h2>Institution Zone</h2>
+				<div className="mb_content_inner">
+                                        
+                                        <p >-> Instant internship & placement opportunities</p>
+                                        
+                                        
+                                        <p >-> Faster learning & earning potential</p>
+                                        
+                                        
+                                        <p >-> Smart integration with your website</p>
+                                        
+                                        
+                                        <p >-> All-in-one app with real-time analytics</p>
+                                        <Row style={{paddingLeft:"15px"}}>
+                                         <Button style={{backgroundColor:'#003462',textAlign:'center'}} round><i class="fab fa-youtube"></i> Watch Video</Button>
+                                         </Row>
+				</div>
+			</div>
+		</div>
