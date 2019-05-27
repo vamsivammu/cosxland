@@ -46,13 +46,13 @@ export default class Home extends React.Component{
                 <SignInModal open={this.state.signinmodal} curinst = {this} />
                 <SignUpModal open= {this.state.signupmodal}  curinst = {this}/>
                 <Row>
-            <Col md={{size:6}} sm={{size:6}} xs={{size:6}}>
+            <Col md={{size:3}} sm={{size:3}} xs={{size:3}}>
                 <div className="logo">
                 <h2  style={{zIndex:1000,fontFamily:"'Share Tech Mono', monospace",color:"#0b1643",paddingTop:"3px"}} >GIGXAPP</h2>
                 <img src="Assets/logo1.jpg" style={{width:"120px",padding:0}}></img>
                 </div>
             </Col>
-                <Col md={{size:6}} sm={{size:6}} xs={{size:6}} >
+                <Col md={{size:9}} sm={{size:9}} xs={{size:9}} >
                     <button className="signup" style={{float:'right'}} onClick={this.signupmodal}>SIGN UP</button>
                     <button className="signin" style={{float:'right'}} onClick={this.signinmodal}>SIGN IN</button>
                     
@@ -62,7 +62,7 @@ export default class Home extends React.Component{
 
             <Row className="emptyrow"></Row>
             <Row>
-                <Col md={{size:2}} className="data">
+                <Col md={{size:2}} sm={{size:6}} xs={{size:6}} className="data">
                     
                     <p>> EASY TO USE WEB APPS</p>
                     
@@ -71,18 +71,18 @@ export default class Home extends React.Component{
                     <p>> SMART CONTRACTS FOR TRIALS</p>
                     
                     <p>> BOT SCREENING & ANALYTICS</p>
-                      
+                      <div style={{textAlign:'center'}}>
                     <button><i class="fa fa-play" aria-hidden="true"></i> WATCH VIDEO</button>
-
+                    </div>
                 </Col>
             </Row>
 
             <Row  className="data1">
 
-            <Col md={{size:1}} sm={{size:1}} xs={{size:1}}>
+            <Col md={{size:1}} sm={{size:3}} xs={{size:3}}>
                 <img src='Assets/6-1.png'></img>
             </Col>
-            <Col md={{size:6}} sm={{size:6}} xs={{size:6}} >
+            <Col md={{size:11}} sm={{size:9}} xs={{size:9}} >
             <Row style={{color:'white',fontWeight:700,marginTop:"15px",fontSize:'23px'}}>
                 GIGXAPP-HIRING MARKETPLACE FOR READY TALENT
             </Row>

@@ -91,7 +91,7 @@ function Transition(props) {
                 </Col>
                 </Row>
                 <Row className="noacc">
-               <Col className="nopadding" md={{offset:1,size:11}}>ALREADY HAVE AN ACCOUNT? <a href="#">SIGN IN</a>
+               <Col className="nopadding" md={{offset:1,size:11}}>ALREADY HAVE AN ACCOUNT? <a onClick={this.props.curinst.signinmodal}>SIGN IN</a>
                </Col>
                 </Row>
                 <br></br>
