@@ -3,8 +3,9 @@ import {Row,Col} from 'reactstrap'
 import Button from 'components/CustomButtons/Button'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import SignInModal from './signinmodal'
+import './home.css'
 import SignUpModal from './signupmodal'
-
+import Youtube from './youtube'
 // import YouTubeSearchedForRounded from '@material-ui/icons/YoutubeSearchedForRounded'
 
 export default class Home extends React.Component{
@@ -15,17 +16,20 @@ export default class Home extends React.Component{
         super(props)
         this.state = {
             signinmodal:false,
-            signupmodal:false
+            signupmodal:false,
+            youtube:false
         }
         this.signinmodal = this.signinmodal.bind(this)
        this.signupmodal =  this.signupmodal.bind(this)
+       this.playvideo = this.playvideo.bind(this)
     }
 
 
     signinmodal(){
             this.setState({
                 signinmodal:true,
-                signupmodal:false
+                signupmodal:false,
+                youtube:false
             })
 
     }
@@ -34,9 +38,18 @@ export default class Home extends React.Component{
 
         this.setState({
             signupmodal:true,
-            signinmodal:false
+            signinmodal:false,
+            youtube:false
         })
 
+    }
+
+    playvideo(){
+        this.setState({
+            signupmodal:false,
+            signinmodal:false,
+            youtube:true
+        })
     }
 
     render(){
@@ -72,7 +85,7 @@ export default class Home extends React.Component{
                     
                     <p>> BOT SCREENING & ANALYTICS</p>
                       <div style={{textAlign:'center'}}>
-                    <button><i class="fa fa-play" aria-hidden="true"></i> WATCH VIDEO</button>
+                    <button onClick={this.playvideo}><i class="fa fa-play" aria-hidden="true"></i> WATCH VIDEO</button>
                     </div>
                 </Col>
             </Row>
